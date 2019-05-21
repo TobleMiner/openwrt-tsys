@@ -18,10 +18,9 @@ define Package/udpping
 	TITLE:=Simple UDP-based network testing utility
 endef
 
-#define Package/udpping/install
-#	$(call Gluon/Build/Install,$(1))
-#	$(INSTALL_DIR) $(1)/usr/bin
-#	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/udpping $(1)/usr/bin/install
-#endef
+define Package/udpping/install
+	$(INSTALL_DIR) $(1)/usr/bin
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/udpping $(1)/usr/bin/install
+endef
 
 $(eval $(call BuildPackage,udpping))
