@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=udpping
-PKG_VERSION:=1
-PKG_RELEASE:=2
+PKG_VERSION:=2
+PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/TobleMiner/udpping.git
-PKG_SOURCE_VERSION:=HEAD
+PKG_SOURCE_VERSION:=e38f75a6199296ff25f51112215159cfb6dc7d13
 
 include $(INCLUDE_DIR)/package.mk
 
