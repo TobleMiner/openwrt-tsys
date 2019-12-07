@@ -30,7 +30,7 @@ load_port()
 
 service_triggers()
 {
-	procd_add_reload_trigger "network"
+	procd_add_reload_trigger "poe"
 }
 
 start_service()
